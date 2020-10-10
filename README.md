@@ -14,7 +14,8 @@ MOT-Mice wsystem includes primary (a top-view) camera and auxiliary (multiple si
 ***imgs***: Descriptional images.  <br>
 
 ## Configuration
-MOT-Mice was developed and tested on MATLAB R2019b using an Nvidia GeForce GTX 1080 Ti GPU with 11 GB memory.
+Add folders ***code*** and ***model*** to search path in MATLAB.  <br>
+MOT-Mice was developed and tested on MATLAB R2019b using an Nvidia GeForce GTX 1080 Ti GPU with 11 GB memory. <br>
 
 ## Run the MOT-Mice system
 #### Camera calibration
