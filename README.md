@@ -27,6 +27,7 @@ Processing the files in the folder of ***Videos of mouse group***. <br>
 First, run ***Step1_MOT_ObjectDetect_IdPairing.m*** to detect all mouse individuals and generate tracklets.  <br>
 <img src="imgs/MOT_OD .png" height="150px" width="auto"/>    <br>
 Second, run ***Step2_MOT_SingleCameraFusion.m*** to fuse tracklets for each camera.  <br>
+<img src="imgs/MOT_IP.png" height="150px" width="auto"/>    <br>
 Third, run ***Step3_MOT_MultiCameraFusion.m*** to fuse tracklets using multicamera.  <br>
 
 #### Postprocessing by manual checking and correction (MOT-CC)
