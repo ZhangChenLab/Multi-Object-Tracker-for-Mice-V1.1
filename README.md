@@ -1,2 +1,31 @@
-# Multi-Object-Tracker-for-Mice-v2
-Multi-object tracking, Multi-camera, Mouse group, Deep learning, Faster R-CNN, Tracklets fusion
+# Multi-Object Tracker for Mice (MOT-Mice)
+**Keywords: Multi-object tracking, Multicamera, Mouse group, Deep learning, Object detection, Faster R-CNN, Tracklets fusion** <br>
+Zhang Chen Lab, Capital Medical University
+
+## Introduction
+Multi-Object Tracker for Mice (MOT-Mice) system uses the Faster R-CNN deep learning algorithm with geometric transformations in combination with multicamera/multi-image fusion technology to track individual unmarked mice.
+MOT-Mice wsystem includes primary (a top-view) camera and auxiliary (multiple side-view) cameras.
+
+## File description
+***code***: Function liberary.  <br>
+***CameraCalibration***: Checkboard images and code used for camera calibration. <br>
+***model***: Trained trace prediction model, and mouse detection models for mouse detection (***Download from cloud disk first***). <br>
+***Videos of mouse group***: Multicamera videos of mouse group (***Download from cloud disk first***). Top-view camera: camera4. Side-view cameras: camera1,2,3. <br>
+***imgs***: Descriptional images.  <br>
+
+## Configuration
+MOT-Mice was developed and tested on MATLAB R2019b using an Nvidia GeForce GTX 1080 Ti GPU with 11 GB memory.
+
+## Run the MOT-Mice system
+#### Camera calibration
+Processing the files in the folder of ***CameraCalibration***. <br>
+Run ***CameraCalibration_V1.m*** in the folder of ***CameraCalibration*** to achieve camera calibration. Get the results: ***camera1.mat, camera2.mat, camera3.mat, camera4.mat, MultiCameraPara.mat.***  <br>
+<img src="imgs/CameraCalibration.png" height="200px" width="auto"/> 
+
+#### Mouse detection (MOT-OD) and identity pairing (MOT-IP)
+Processing the files in the folder of ***Videos of mouse group***. <br>
+First, run ***Step1_MOT_ObjectDetect_IdPairing.m*** to detect all mouse individuals and generate tracklets.  <br>
+Second, run ***Step2_MOT_SingleCameraFusion.m*** to fuse tracklets for each camera.  <br>
+Third, run ***Step3_MOT_MultiCameraFusion.m*** to fuse tracklets using multicamera.  <br>
+
+#### Step 4: Post-processing and manual correction
