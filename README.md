@@ -26,10 +26,10 @@ Run ***CameraCalibration_V1.m*** to achieve camera calibration. <br>
 Processing the files in the folder of ***Videos of mouse group***. <br>
 First, run ***Step1_MOT_ObjectDetect_IdPairing.m*** to detect all mouse individuals and generate tracklets.  <br>
 <img src="imgs/MOT_OD .png" height="150px" width="auto"/>    <br>
-<img src="imgs/MOT_IP.png" height="160px" width="auto"/>    <br>
+<img src="imgs/MOT_IP.png" height="150px" width="auto"/>    <br>
 
 Second, run ***Step2_MOT_SingleCameraFusion.m*** to fuse tracklets for each camera.  <br>
 Third, run ***Step3_MOT_MultiCameraFusion.m*** to fuse tracklets using multicamera.  <br>
-<img src="imgs/trajectory.png" height="160px" width="auto"/>    <br>
+<img src="imgs/trajectories-1.png" height="160px" width="auto"/>    <br>
 
 #### Postprocessing by manual checking and correction (MOT-CC)
